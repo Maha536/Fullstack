@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uploading Multiple Media</title>
+        <style type="text/css">
+            .flex-parent {
+                display: flex;
+                flex-direction: row;
+        
+      }
+            .box {
+                flex-basis: 33%;
+                flex-shrink: 1;
+                flex-grow: 1;
+            }
+            .box1 {
+                width: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <section class="flex-parent">
+                <div class="box">
+                    <img src="logo.png" alt="LOGO">
+                </div>
+                <div class="box">
+                    Upload Media &nbsp;
+                    My Media &nbsp;
+                    Followers/Following
+                </div>
+                <div class="box">
+                    Account
+                </div>
+            </section>
+            <section class="flex-parent">
+                <div class="box1">
+                    <img src="Profile.png" alt="Profile Pic">
+                </div>
+                <div class="box2">
+                    @User
+                </div>
+            </section>
+            
+        </header>
+        <hr>
+        <section class="flex-parent">
+            <div class="box1">
+                <h1>Upload Media</h1><br>
+                <aside>
+                    <nav>
+                        Single Media<br>
+                        Multiple Media
+                    </nav>
+                </aside>
+            </div>
+            <div class="box2">
+                <h2 style="border: 1px solid black;">New Media Page</h2><br>
+                <form name="uploadmedia" action="uservalidation.jsp" method="POST">
+                    Browse <input type="file" ></input>&nbsp;<button name="upload">Upload</button><br>
+                    Title <input type="text" name='uname'><br>
+                    Description <input type="password" name="pwrd"><br>
+                    Tags <input type="password" name="pwrd"><br>
+                    Effects <button name="b1">Sepia</button> <button name="b1">Grey</button> <button name="b1">Brightness</button> <button name="b1">Contrast</button>
+                    
+                </form>
+                <hr>
+                <form name="uploadmedia" action="uservalidation.jsp" method="POST">
+                    Browse <input type="file" ></input>&nbsp;<button name="upload">Upload</button><br>
+                    Title <input type="text" name='uname'><br>
+                    Description <input type="password" name="pwrd"><br>
+                    Tags <input type="password" name="pwrd"><br>
+                    Effects <button name="b1">Sepia</button> <button name="b1">Grey</button> <button name="b1">Brightness</button> <button name="b1">Contrast</button>
+                    
+                </form>
+                <hr>
+                Still goes on........
+            </div>
+        </section>
+    </body>
+</html>
