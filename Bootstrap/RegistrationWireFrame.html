@@ -2,94 +2,106 @@
 <html>
     <head>
         <title>User Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<style type="text/css">
+            li{
+                background-color: darkslateblue;
+           }
+        
+        </style>-->
 	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
-    <body>
+    <body style="background-color: rgb(155, 210, 214);">
         <header>
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <img src="logo.png" alt="LOGO">
+                        <img src="pixogram.png" alt="LOGO" width="150px" height="150px">
                     </div>
-                    <div class="col-6">
-                        <ul class="nav nav-pills">
+                    <div class="col-6 text-center">
+                        <br><br>
+                        <ul class="nav nav-pills justify-content-center">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Upload Media</a>
+                                <a href="#" class="nav-link btn-outline-primary"><b>Upload Media</b></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">My Media</a>
+                                <a href="#" class="nav-link btn-outline-primary"><b>Media</b> </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Followers/Following</a>
+                                <a href="#" class="nav-link btn-outline-primary"><b>Followers/Following</b></a>
                             </li>        
                         </ul>    
                     </div>
                     <div class="col-3">
-                        <ul class="nav nav-pills">
-                            <li><a href="#" class="nav-link">Account</a></li>
+                        <br><br>
+                        <ul class="nav nav-pills justify-content-center">
+                            <li><a href="#" class="nav-link btn-primary"><b>Account</b></a></li>
                         </ul>
                     </div>
                 </div>    
-            <section>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="Profile.png" alt="Profile Pic">
+                <section>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="profile.png" alt="Profile Pic" width="200px" height="200px">
+                        </div>
+                        <div class="col">
+                            <br><br><br><br>
+                            <h3 id=usname>@Username</h3>    
+                        </div>
                     </div>
-                    <div class="col">
-                        @Users
-                    </div>
-                </div>
-            </section>  
+                </section>
+                <hr>  
+            </div>
         </header>
-        <hr>
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <h2 class="text-muted mt-2 mb-3">Account</h2>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active">Login</a>
+                        <h2 class="text-muted mt-2 mb-3 text-center">Account</h2>
+                        <ul class="nav flex-column justify-content-center">
+                            <li class="nav-item text-center">
+                                <a href="#" class="nav-link btn-primary btn-lg">Login</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Register</a>
+                            <br>
+                            <li class="nav-item text-center">
+                                <a href="#" class="nav-link btn-primary btn-lg active">Register</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col">
-                        <h2 class="text-muted mt-2 mb-3">Register</h2>
+
+                        <h2 class="text-muted mt-2 mb-3 text-center">Register</h2>
                         <form>
                             <div class="form-group row">
-                                <label for="horizontalInputEmail" class="col-sm-3 col-form-label">Username</label>
+                                <label for="horizontalInputuname" class="col-sm-3 col-form-label"><b>Username</b></label>
                                 <div class="col-sm-7">
-                                    <input type="text" class="form-control" id="horizontalInputEmail" placeholder="User Name">
+                                    <input type="text" class="form-control" id="horizontalInputuname" placeholder="User Name">
                                 </div>
                                 <div class="col-sm-2">
-                                    <button type="button" id="checkun" class="btn-info">Check</button>
+                                    <button type="button" id="checkun" class="btn-info"><b>Check</b></button>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="horizontalInputEmail" class="col-sm-3 col-form-label">Email</label>
-                                <div class="col-sm-9">
+                                <label for="horizontalInputEmail" class="col-sm-3 col-form-label"><b>Email</b></label>
+                                <div class="col-sm-7">
                                     <input type="email" class="form-control" id="horizontalInputEmail" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="horizontalInputPassword" class="col-sm-3 col-form-label">Password</label>
-                                <div class="col-sm-9">
+                                <label for="horizontalInputPassword" class="col-sm-3 col-form-label"><b>Password</b></label>
+                                <div class="col-sm-7">
                                     <input type="password" class="form-control" id="horizontalInputPassword" placeholder="Password">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="horizontalInputEmail" class="col-sm-3 col-form-label">Repeat Password</label>
-                                <div class="col-sm-9">
-                                    <input type="password" class="form-control" id="horizontalInputEmail" placeholder="Repeat password">
+                                <label for="horizontalpassword1" class="col-sm-3 col-form-label"><b>Repeat Password</b> </label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="horizontalpassword1" placeholder="Repeat password">
                                 </div>
                             </div>
                             <div class="form-group row">
-                            <div class="offset-sm-3 col-sm-9">
+                            <div class="offset-sm-5 col-sm-7">
                                 <button type="submit" class="btn btn-primary">Register</button>
                             </div>
                             </div>
@@ -99,8 +111,8 @@
             </div>   
         </section>
         <!-- Jquery Resources -->
-		<!-- jQuery first, then Bootstrap JS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>	
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
     </body>
 </html>
