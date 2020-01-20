@@ -3,16 +3,25 @@
     <head>
         <title>User Registration</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<style type="text/css">
-            li{
-                background-color: darkslateblue;
-           }
+        <<style type="text/css">
+            .bg {
+  /* The image used */
+  background-image: url("pixogram.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
         
-        </style>-->
+        </style>
 	    <!-- Bootstrap CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
-    <body style="background-color: rgb(155, 210, 214);">
+    <body style="background-color: #ccebff;">
         <header>
             <div class="container">
                 <div class="row">
@@ -43,11 +52,11 @@
                 <section>
                     <div class="row">
                         <div class="col-3">
-                            <img src="profile.png" alt="Profile Pic" width="200px" height="200px">
+                            <img src="profile.png" class="img-circle" alt="Profile Pic" width="200px" height="200px">
                         </div>
-                        <div class="col">
-                            <br><br><br><br>
-                            <h3 id=usname>@Username</h3>    
+                        <div class="col" style="text-alignment:left-center;">
+                            
+                            <h3 id="usname" class="text-center-left">@Username</h3>    
                         </div>
                     </div>
                 </section>

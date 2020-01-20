@@ -3,15 +3,14 @@
     <head>
         <title>User SignIn</title>
 	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="css/bootstrap.min.css">
-        
+	    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <img src="logo.png" alt="LOGO">
+                        <img src="pixogram.png" width="100px" height="100px" alt="LOGO">
                     </div>
                     <div class="col-6">
                         <ul class="nav nav-pills">
@@ -32,47 +31,52 @@
                         </ul>
                     </div>
                 </div>    
-            <section>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="Profile.png" alt="Profile Pic">
+                <section>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="Profile.png" width="200px" height="200px" alt="Profile Pic">
+                        </div>
+                        <div class="col">
+                            @Users
+                        </div>
                     </div>
-                    <div class="col">
-                        @Users
-                    </div>
-                </div>
-            </section>  
+                </section> 
+                <hr> 
+            </div>
         </header>
-        <hr>
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-3">
                         <h2 class="text-muted mt-2 mb-3">Account</h2>
                         <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link active">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Register</a>
+                            <li class="nav-item text-center">
+                                <a href="#" class="nav-link active btn-primary btn-lg">Login</a>
+                            </li><br>
+                            <li class="nav-item text-center">
+                                <a href="#" class="nav-link btn-primary btn-lg">Register</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col">
-                        <h2 class="text-muted mt-2 mb-3">Login</h2>
+                        <h2 class="text-muted mt-2 mb-3 text-center"><b>Login</b></h2>
+                        <div class="offset-4">
+                            <img src="profile.png" alt="Profile">
+
+                        </div>
                         <form>
                             <div class="form-group row">
-                              <div class="col-sm-5">
+                              <div class="offset-sm-3 col-sm-5">
                                 <input type="email" class="form-control" id="horizontalInputEmail" placeholder="Email">
                               </div>
                             </div>
                             <div class="form-group row">
-                              <div class="col-sm-5">
+                              <div class="offset-sm-3 col-sm-5">
                                 <input type="password" class="form-control" id="horizontalInputPassword" placeholder="Password">
                               </div>
                             </div>
                             <div class="form-group row">
-                              <div class="offset-sm-2">
+                              <div class="offset-sm-5">
                                 <button type="submit" class="btn btn-primary">Log In</button>
                               </div>
                             </div>
@@ -83,7 +87,7 @@
         </section>
         <!-- Jquery Resources -->
 		<!-- jQuery first, then Bootstrap JS -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>	
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>	
     </body>
 </html>
