@@ -1,0 +1,34 @@
+
+    <form  #formdata="ngForm" (ngSubmit)="saveProduct(formdata.value)">
+        <div class="form-group row">
+            <label  class="col-sm-3 col-form-label"> <b>Name</b> </label>
+            <div class="col">
+                <input type="text" name="name" ngModel/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-3 col-form-label"> <b>Category</b> </label>
+            <div class="col">
+                <input type="text" name="category" ngModel/>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-3 col-form-label"> <b>Cost</b> </label>
+            <div class="col">
+                <input type="text" name="cost" ngModel/>
+            </div>
+        </div>
+        <div class="form-group row">
+            
+            <div class="col">
+                <input type="submit"  value="SaveProduct" />
+            </div>
+        </div>
+    </form >
+    <div>
+        <h2>{{pname}}</h2>
+        <h2>{{pcat}}</h2>
+        <h2>{{pcost}}</h2>
+    </div>
+
+    

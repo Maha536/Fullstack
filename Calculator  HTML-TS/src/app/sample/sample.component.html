@@ -1,0 +1,22 @@
+<h2>Sample Component</h2>
+<div><h2>Name:</h2><h2>{{name}}</h2></div>
+<div><h2>Age:</h2><h2>{{age}}</h2></div>
+<div><h2>Designation:</h2><h2>{{designation}}</h2></div>
+<div *ngIf="age >= 18">
+    <h2>Eligible to vote........</h2>
+</div>
+
+<div [ngSwitch]="designation">
+    <div *ngSwitchCase="'manager'"><h2>Needs soft skills....</h2></div>
+    <div *ngSwitchCase="'developer'"><h2>Needs logics....</h2></div>
+    <div *ngSwitchCase="'trainee'"><h2>Needs to be quick learner....</h2></div>
+</div>
+
+<div>
+    <button type="button" value="Change" (click)="changeIt()">Change</button>
+</div>
+
+<div *ngFor="let grade of grades;let i=index">
+    <h2>gpa = {{grade}} index = {{i}}</h2>
+    
+</div>

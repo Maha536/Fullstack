@@ -1,0 +1,25 @@
+<span>
+    <b>Value-1 :</b>&nbsp;
+    <input type="text" id="ip1" val="" #input1>
+</span>
+<br><br>
+<span>
+    <b>Value-2 :</b>&nbsp;
+    <input type="text" id="ip2" val="" #input2>
+</span>
+<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span>
+    <button type="button" value="+" (click)="calculate(input1,input2,'+')">+</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" value="-" (click)="calculate(input1,input2,'-')">-</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" value="*" (click)="calculate(input1,input2,'*')">*</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" value="/" (click)="calculate(input1,input2,'/')">/</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Reset" (click)="reset(input1,input2)">
+</span>
+<br/><br/>
+<span>
+    <b>Result :</b>&nbsp;&nbsp;
+    <input type="number" id="result" value="{{rstxt}}" readonly >
+</span>
+<h2>
+{{errortxt}}
+</h2>
