@@ -1,0 +1,20 @@
+<div>
+    <table class="table">
+        <thead>
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Tags</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let file of filesList;let i=index">
+                <td>{{i+1}}</td>
+                <td>{{file.Name}}</td>
+                <td>{{file.Title}}</td>
+                <td>{{file.Description}}</td>
+                <td>{{file.Tags}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
