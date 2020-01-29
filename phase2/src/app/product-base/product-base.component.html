@@ -1,0 +1,11 @@
+
+<div class="container">
+    <!--to get input-->
+    <!--we have to handle submit_info event of product entry
+    data comes will be passed to function with $event-->
+<app-product-entry (submit_info)="addNewProduct($event)"></app-product-entry>
+<!--passing data to productList of another component-->
+<app-product-list [productsList]="products"></app-product-list>
+</div>
+
+
