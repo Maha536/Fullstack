@@ -1,0 +1,8 @@
+
+<app-menu></app-menu>
+<br/>
+<div *ngIf="auth.isUserLoggedin()" class="text-success">
+    <h3>Welcome{{auth.getUserDetails()}}</h3>
+</div>
+<br/>
+<router-outlet></router-outlet>

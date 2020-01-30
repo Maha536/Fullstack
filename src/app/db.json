@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "First",
+      "category": "Books",
+      "cost": 599
+    },
+    {
+      "id": 2,
+      "name": "Two",
+      "category": "Electronic",
+      "cost": "99"
+    },
+    {
+      "id": 3,
+      "name": "Three",
+      "category": "Books",
+      "cost": 150
+    },
+    {
+      "id": 4,
+      "name": "Four",
+      "category": "Books",
+      "cost": 999
+    }
+  ],
+  "media": [
+    {
+      "id": 1,
+      "Name": "pic1",
+      "Title": "beach",
+      "Description": "Beach pic",
+      "Tags": "beach,sea,ocean"
+    },
+    {
+      "id": 2,
+      "Name": "pic2",
+      "Title": "dgmkln",
+      "Description": "aaaaaaaaa",
+      "Tags": "bbb"
+    }
+  ]
+}
