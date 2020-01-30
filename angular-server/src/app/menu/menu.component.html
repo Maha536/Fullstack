@@ -1,0 +1,24 @@
+<ul class="nav nav-pill nav-justified">
+    <li class="nav-item">
+      <a class="nav-link btn-success"  routerLink="home"> Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn-warning" routerLink="contact"> Contact us </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn-info" routerLink="about"> About us </a>
+    </li>
+    <li class="nav-item" *ngIf="auth.isUserLoggedin()">
+      <a class="nav-link btn-warning" routerLink="product"> Product </a>
+    </li>
+    <li class="nav-item" *ngIf="!auth.isUserLoggedin()">
+      <a class="nav-link btn-danger" routerLink="login"> Login </a>
+      
+    </li>
+    <li class="nav-item" *ngIf="auth.isUserLoggedin()">
+      <a class="nav-link btn-info" routerLink="media"> Media</a>
+    </li>
+    <li class="nav-item" *ngIf="auth.isUserLoggedin()">
+      <a class="nav-link btn-info" routerLink="logout"> Logout</a>
+    </li>
+  </ul>
