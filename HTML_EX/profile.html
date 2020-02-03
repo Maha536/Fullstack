@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <div>
+            <form action="validate-server.jsp" method="POST">
+                <header>
+                    <h1>Profile Registration</h1>
+                </header>
+                <ul >
+                    <li>
+                        First Name        : <input type="text" name="fname" required>
+                    </li>
+                    <br>
+                    <li>
+                        Last Name         : <input type="text" name="lname">
+                    </li>
+                    <br>
+                    <li>
+                        Father Name       : <input type="text" name="fathername" required>
+                    </li>
+                    <br>
+                    <li>
+                        Mother Name       : <input type="text" name="mothername" required>
+                    </li>
+                    <br>
+                    <li>
+                        Email             : <input type="email" name="email" required>
+                    </li>
+                    <br>
+                    <li>
+                        Mobile            : <input type="tel" name="mobile" required>
+                    </li>
+                    <br>
+                    <li>
+                        DOB               : <input type="date" name="dob" required>
+                    </li>
+                    <br>
+                    <li>
+                        Gender            : <input type="radio" name="gender" value="male" required> Male  <input type="radio" name="gender" value="female" > Female
+                    </li>
+                    <br>
+                    <li>
+                        Proof Type        : <select>
+                            <option value="adhar">Adhar</option>
+                            <option value="passport">passport</option>
+                            <option value="pan">PAN</option>
+                            <option value="voterid">Voter ID</option>
+                        </select>
+                    </li>
+                    <br>
+                    <li>
+                        ID Number         : <input type="text" name="id" required>
+                    </li>
+                    <br>
+                    <li>
+                        Address           : <address>
+                            <textarea rows="8" cols="30" required></textarea>
+                        </address>
+                    </li>
+                    <br>
+                    <li>
+                        LinkedIn Profile   :<input type="url" name="linkedinurl">
+                    </li>
+                    <br>
+                    <li>
+                        Qualification      : <input type="radio" name="qual" value="B.Tech" required> B.Tech  <input type="radio" name="qual" value="Bsc" > Bsc 
+                                        <input type="radio" name="qual" value="other" > other
+                    </li>
+                    <br>
+                    <li>
+                        Graduation Points  : <input type="range" min="0" max="10" step="0.1" required>
+                    </li>
+                    <br>
+                    <li>
+                        Technical Skills   : <input type="checkbox" name="skills" value="c"> C &nbsp;
+                                             <input type="checkbox" name="skills" value="Java"> Java &nbsp;
+                                             <input type="checkbox" name="skills" value="Sql"> Sql &nbsp;
+                                            
+                    </li>
+                    <br>
+                    <li>
+                        <input type="submit" value="SUBMIT">  &nbsp; &nbsp; &nbsp; &nbsp;    <input type="reset" value="RESET">
+                    </li>
+                </ul>
+            </form>
+            
+        </div>
+
+    </body>
+</html>

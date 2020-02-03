@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas Example</title>
+
+    </head>
+    <body>
+
+        <canvas id="can1" width="1650" height="900" style="border: 2px;border-style: dashed;">
+            <h1>Canvas not supported............</h1>
+        </canvas>
+        <!--Get an object of canvas-->
+        <script type="text/javascript"> 
+            //inbuit object : document
+            var obj = document.getElementById("can1");
+            var context = obj.getContext("2d");
+            //context.moveTo(0,0);
+            //context.lineTo(500,600);
+            //context.stroke();
+            var img  = new Image();
+            img.src = "./sntr2.png";
+            img.onLoad = function(){
+                context.drawImage(10,20);
+            }
+            
+
+        </script>
+    </body>
+</html>

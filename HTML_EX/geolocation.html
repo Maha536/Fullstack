@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geolocation Example</title>
+
+    </head>
+    <body>
+        <script type="text/javascript"> 
+
+            function coordinates(location){
+                var lat = location.coordinates.lattitude;
+                var lon = location.coordinates.longitude;
+            }
+
+            window.onload=function() {
+                try{
+                    var loc = navigator.location();
+                    if(loc){
+                    console.log("location service available");
+
+                   }
+                    else{
+                    console.log("location service not available");
+                   }
+                }
+                catch(ex){
+                    console.log("Geolocation issue...");
+                }
+            }
+
+        </script>
+
+        <h1>Geo Loctaion App</h1>
+    </body>
+</html>
