@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+    </style>
+    <head>
+        <script src="calc.js" ></script>
+    </head>
+    <body>
+        <span>
+            <b>Value-1 :</b>&nbsp;
+            <input type="text" id="ip1" val="">
+        </span>
+        <br><br>
+        <span>
+            <b>Value-2 :</b>&nbsp;
+            <input type="text" id="ip2" val="">
+        </span>
+        <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>
+            <button type="button" value="+" name="addition" onclick="calculate(this)">+</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" value="-" name="subtraction" onclick="calculate(this)">-</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" value="*" name="multiplication" onclick="calculate(this)">*</button>&nbsp;&nbsp;&nbsp;
+            <button type="button" value="/" name="division" onclick="calculate(this)">/</button>&nbsp;&nbsp;&nbsp;
+            <input type="button" value="Reset" onClick="window.location.reload()">
+        </span>
+        <br/><br/>
+        <span>
+            <b>Result :</b>&nbsp;&nbsp;
+            <input type="text" id="rstxt" disabled>
+            
+        </span>
+        <span>
+        <h2 id="error"></h2>
+        </span>
+    </body>
+</html>
